@@ -1,0 +1,5 @@
+avr
+msp430
+upstream
+*.kdev4
+*.directory

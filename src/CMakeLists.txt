@@ -1,0 +1,50 @@
+
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+CMAKE_POLICY(SET CMP0007 NEW)
+
+PROJECT(crypto C)
+SET(crypto_VERSION_MAJOR 1)
+SET(crypto_VERSION_MINOR 0)
+SET(crypto_VERSION_PATCH 0)
+SET(crypto_VERSION_TWEAK 0)
+
+SET(TMP_PROJECT_DESCRIPTION "Cryptography libraries repacked for convenience from AVR Crypto Lib"
+        CACHE STRING "Project Description")
+
+SET(CMAKE_INSTALL_PREFIX ${PLATFORM_PACKAGES_PATH})
+SET(PUBLIC_INCLUDE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+
+SET(USE_ASM_IF_AVAILABLE 1)
+IF(${USE_ASM_IF_AVAILABLE})
+    ENABLE_LANGUAGE(ASM)
+ENDIF()
+
+MACRO(ADD_SOURCES)
+    FILE(RELATIVE_PATH _relPath "${CMAKE_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}")
+    FOREACH(_src ${ARGN})
+        IF(${USE_ASM_IF_AVAILABLE})
+            GET_FILENAME_COMPONENT(_name ${_src} NAME_WE)
+            IF(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/${_name}-${TOOLCHAIN_PREFIX}.S")
+                SET(_src ${_name}-${TOOLCHAIN_PREFIX}.S)
+            ENDIF()
+        ENDIF()
+        IF(_relPath)
+            LIST(APPEND SRCS "${_relPath}/${_src}")
+        ELSE()
+            LIST(APPEND SRCS "${_src}")
+        ENDIF()
+    ENDFOREACH()
+    IF(_relPath)
+        # propagate SRCS to parent directory
+        SET(SRCS ${SRCS} PARENT_SCOPE)
+    ENDIF()
+ENDMACRO()
+
+ADD_SUBDIRECTORY(sha1)
+ADD_SUBDIRECTORY(md5)
+ADD_SUBDIRECTORY(gf256mul)
+ADD_SUBDIRECTORY(aes)
+
+FILE(GLOB_RECURSE HEADERS *.h)
+ADD_PLATFORM_LIBRARY(crypto STATIC "" ${SRCS})
+INSTALL_PLATFORM_LIBRARY(crypto ${HEADERS})
