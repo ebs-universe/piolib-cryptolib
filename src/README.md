@@ -1,16 +1,19 @@
-= Ported Algorithms =
+Ported Algorithms
+=================
 
-
-== Hash Algorithms ==
+Hash Algorithms
+---------------
 
   - SHA1
   - MD5
   
-== Encryption Algorithms ==
+Encryption Algorithms
+---------------------
 
   - AES
 
-= Changes from AVR-Crypto-Lib = 
+Changes from AVR-Crypto-Lib
+===========================
   
   - Added a `common` folder for common sources and portable assembly files. 
 
@@ -41,7 +44,8 @@
     differences in how each platform handles read only memory. This has not 
     yet been adequately tested.
     
-== AES ==
+AES
+---
 
   - Moved all the `aesXXX_enc.h/c` files into `aes_enc.h/c`. This makes it 
     compatible with the structure of `aes_enc-avr.S`.
