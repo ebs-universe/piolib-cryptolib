@@ -98,7 +98,7 @@ void md5_core(uint32_t *a, void *block, uint8_t as, uint8_t s, uint8_t i, uint8_
 	cli_hexdump(&i, 1); cli_putc(']');
     #endif	
 	t = a[as] + funcs[fi](a[(as+1)&3], a[(as+2)&3], a[(as+3)&3]) 
-	    + *((uint32_t*)block) + ROMEM_READ_WORD(md5_T_p+i) ;
+	    + *((uint32_t*)block) + ROMEM_READ_DWORD(md5_T_p+i) ;
 	a[as]=a[(as+1)&3] + ROTL32(t, s);
 }
 
