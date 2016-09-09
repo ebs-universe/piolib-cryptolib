@@ -1,19 +1,26 @@
-Ported Algorithms
-=================
+Included Algorithms
+===================
 
 Hash Algorithms
 ---------------
 
-  - SHA1
-  - MD5
+  - md5
+  - sha1
+  - sha256
   
 Encryption Algorithms
 ---------------------
 
-  - AES
+  - aes [128, 192, 256]
+  
+Other Algorithms
+----------------
 
-Changes from AVR-Crypto-Lib
-===========================
+  - gf256mul
+  - entropium
+
+Significant changes from AVR-Crypto-Lib
+=======================================
   
   - Added a `common` folder for common sources and portable assembly files. 
 
@@ -29,8 +36,8 @@ Changes from AVR-Crypto-Lib
   - Moved `avr_asm_macros.S` into `common`.
   
   - Renamed all used assembly sources from `*-asm.S` to `*-avr.S`. CMakeLists 
-    designed to now use `<name>-<toolchain-prefix>.S` when told to include 
-    `<name>.c`, if 
+    designed to now use `<name>-<toolchain-prefix>.S` instead when told to 
+    include `<name>.c`, if 
       - the assembly file is available.
       - the CMake variable `USE_ASM_IF_AVAILABLE` is set.
       - where the build system is configured with a toolchain file that sets
