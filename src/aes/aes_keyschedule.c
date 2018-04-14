@@ -30,7 +30,7 @@
 #include "aes_keyschedule.h"
 #include "aes_sbox.h"
 #include <string.h>
-#include "../common/romem.h"
+#include <platform/romem.h>
 
 static
 void aes_rotword(void *a)

@@ -1,7 +1,7 @@
 /* aes inverted sbox */
 
 #include <stdint.h>
-#include "../common/romem.h"
+#include <platform/romem.h>
 
 const uint8_t aes_invsbox[256] ROMEM = {
         0x52, 0x09, 0x6a, 0xd5, 0x30, 0x36, 0xa5, 0x38, 0xbf, 0x40, 0xa3, 0x9e,

@@ -31,7 +31,7 @@
 
 #include <stdint.h>
 #include <string.h> /* for memcpy, memmove, memset */
-#include "../common/romem.h"
+#include <platform/romem.h>
 #include "sha256.h"
 
 #define LITTLE_ENDIAN

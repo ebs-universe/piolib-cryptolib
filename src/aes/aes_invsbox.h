@@ -27,7 +27,7 @@
 #ifndef AES_INVSBOX_H_
 #define AES_INVSBOX_H_
 #include <stdint.h>
-#include "../common/romem.h"
+#include <platform/romem.h>
 
 #define aes_invsbox_T_p     ROMEM_TABLE_P(aes_invsbox)
 

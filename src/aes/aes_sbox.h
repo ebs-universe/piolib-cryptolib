@@ -27,7 +27,7 @@
 #ifndef AES_SBOX_H_
 #define AES_SBOX_H_
 #include <stdint.h>
-#include "../common/romem.h"
+#include <platform/romem.h>
 
 #define aes_sbox_T_p     ROMEM_TABLE_P(aes_sbox)
 

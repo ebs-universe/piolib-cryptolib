@@ -28,7 +28,7 @@
 #include "md5.h"
 #include <stdint.h>
 #include <string.h>
-#include "../common/romem.h"
+#include <platform/romem.h>
 
 #undef DEBUG
  
