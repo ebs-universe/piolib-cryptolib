@@ -1,3 +1,5 @@
 
 
-ADD_SOURCES("md5.c")
+ADD_FILES(HEADERS md5.h)
+ADD_FILES(SOURCES md5.c)
+
