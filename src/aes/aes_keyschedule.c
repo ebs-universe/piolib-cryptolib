@@ -26,9 +26,9 @@
  */
 
 #include <stdint.h>
-#include "aes.h"
-#include "aes_keyschedule.h"
-#include "aes_sbox.h"
+#include "cryptolib/aes/aes.h"
+#include "cryptolib/aes/aes_keyschedule.h"
+#include "cryptolib/aes/aes_sbox.h"
 #include <string.h>
 #include <platform/romem.h>
 

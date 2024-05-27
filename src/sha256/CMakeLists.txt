@@ -1,5 +1,0 @@
-
-
-ADD_FILES(HEADERS sha256.h)
-ADD_FILES(SOURCES sha256.c)
-

@@ -27,10 +27,10 @@
 
 #include <stdint.h>
 #include <string.h>
-#include "aes.h"
-#include "../gf256mul/gf256mul.h"
-#include "aes_sbox.h"
-#include "aes_enc.h"
+#include "cryptolib/aes/aes.h"
+#include "cryptolib/gf256mul/gf256mul.h"
+#include "cryptolib/aes/aes_sbox.h"
+#include "cryptolib/aes/aes_enc.h"
 
 static
 void aes_shiftcol(void *data, uint8_t shift)

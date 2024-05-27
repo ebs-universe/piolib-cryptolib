@@ -1,4 +1,0 @@
-
-
-ADD_FILES(SOURCES   gf256mul.c)
-ADD_FILES(HEADERS   gf256mul.h)

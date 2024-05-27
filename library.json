@@ -1,0 +1,24 @@
+{
+    "name": "ebs-cryptolib",
+    "version": "0.1.0",
+    "description": "Cryptography libraries repacked for convenience from AVR Crypto Lib",
+    "keywords": "ebs",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ebs-universe/piolib-cryptolib"
+    },
+    "authors": {
+        "name": "Chintalagiri Shashank",
+        "email": "shahshank.chintalagiri@gmail.com",
+        "url": "https://github.com/chintal",
+        "maintainer": true
+    },
+    "license": "GPL-3.0-or-later",
+    "homepage": "https://github.com/ebs-universe",
+    "frameworks": "*",
+    "platforms": "*",
+    "dependencies": {
+        "chintal/ebs-ds": "^0.1.1",
+        "chintal/ebs-platform": "^0.1.1"
+    }
+  }

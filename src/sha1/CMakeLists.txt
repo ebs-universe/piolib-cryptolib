@@ -1,5 +1,0 @@
-
-
-ADD_FILES(HEADERS sha1.h)
-ADD_FILES(SOURCES sha1.c)
-
