@@ -48,8 +48,8 @@
 
 #include <stdint.h>
 #include <string.h>
-#include "cryptolib/sha256/sha256.h"
-#include "cryptolib/entropium/entropium.h"
+#include "../sha256/sha256.h"
+#include "entropium.h"
 
 /**
  * \brief secret entropy pool. 

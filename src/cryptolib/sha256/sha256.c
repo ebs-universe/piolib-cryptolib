@@ -32,7 +32,7 @@
 #include <stdint.h>
 #include <string.h> /* for memcpy, memmove, memset */
 #include <platform/romem.h>
-#include "cryptolib/sha256/sha256.h"
+#include "sha256.h"
 
 #define LITTLE_ENDIAN
 

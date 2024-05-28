@@ -25,7 +25,7 @@
  * 
  */
 
-#include "cryptolib/md5/md5.h"
+#include "md5.h"
 #include <stdint.h>
 #include <string.h>
 #include <platform/romem.h>

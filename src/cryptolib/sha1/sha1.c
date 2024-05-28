@@ -27,8 +27,8 @@
 
 #include <string.h> /* memcpy & co */
 #include <stdint.h>
-#include "cryptolib/common/debug.h" 
-#include "cryptolib/sha1/sha1.h"
+#include "../common/debug.h" 
+#include "sha1.h"
 
 #ifdef DEBUG
 #  undef DEBUG

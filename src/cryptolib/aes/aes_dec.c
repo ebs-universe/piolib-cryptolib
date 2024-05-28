@@ -19,10 +19,10 @@
 
 #include <stdint.h>
 #include <string.h>
-#include "cryptolib/gf256mul/gf256mul.h"
-#include "cryptolib/aes/aes.h"
-#include "cryptolib/aes/aes_invsbox.h"
-#include "cryptolib/aes/aes_dec.h"
+#include "../gf256mul/gf256mul.h"
+#include "aes.h"
+#include "aes_invsbox.h"
+#include "aes_dec.h"
 
 
 // static
