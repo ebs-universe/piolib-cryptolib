@@ -1,0 +1,7 @@
+<map id="entropium_getRandomByte" name="entropium_getRandomByte">
+<area shape="rect" id="node1" title="get a single byte of random data" alt="" coords="5,31,207,57"/>
+<area shape="rect" id="node2" href="$entropium_8c.html#a95d14d8c2bb18d26216b82f467eefb03" title="generate a fixed size block of random data" alt="" coords="255,31,461,57"/>
+<area shape="rect" id="node3" href="$sha256_8c.html#ae436d07e4a6f3e8eeab60a8c2a0cf472" title="sh256_init initialises a sha256 context for hashing. sh256_init c initialises the given sha256 contex..." alt="" coords="529,5,626,32"/>
+<area shape="rect" id="node4" href="$sha256_8c.html#a5837f901296887d759c2698866748d25" title="function to process the last block being hashed" alt="" coords="509,56,645,83"/>
+<area shape="rect" id="node5" href="$sha256_8c.html#a33a5ddbbf0f2cb105a2191a72624138d" title="update the context with a given block" alt="" coords="693,56,835,83"/>
+</map>

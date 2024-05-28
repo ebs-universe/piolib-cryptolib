@@ -1,0 +1,4 @@
+<map id="sha256_lastBlock" name="sha256_lastBlock">
+<area shape="rect" id="node1" title="function to process the last block being hashed" alt="" coords="5,5,141,32"/>
+<area shape="rect" id="node2" href="$sha256_8c.html#a33a5ddbbf0f2cb105a2191a72624138d" title="update the context with a given block" alt="" coords="189,5,331,32"/>
+</map>

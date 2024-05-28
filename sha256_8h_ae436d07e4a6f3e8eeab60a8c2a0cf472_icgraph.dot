@@ -1,0 +1,18 @@
+digraph "sha256_init"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="sha256_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="sh256_init initialises a sha256 context for hashing. sh256_init c initialises the given sha256 contex..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="entropium_addEntropy",height=0.2,width=0.4,color="black",URL="$entropium_8c.html#aceb838321ef373e5a1a4a8ed53a0cc8e",tooltip="add entropy to the prng"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="entropium_getRandomBlock",height=0.2,width=0.4,color="black",URL="$entropium_8c.html#a95d14d8c2bb18d26216b82f467eefb03",tooltip="generate a fixed size block of random data"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="entropium_getRandomByte",height=0.2,width=0.4,color="black",URL="$entropium_8c.html#aa1d70e6b1140fe37cd20d2aab88fdcf8",tooltip="get a single byte of random data"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sha256",height=0.2,width=0.4,color="black",URL="$sha256_8c.html#a84fa1efd3a46c31896dced1f226d3f25",tooltip="simple SHA-256 hashing function for direct hashing"];
+}

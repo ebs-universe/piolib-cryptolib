@@ -1,0 +1,4 @@
+<map id="entropium_getRandomBlock" name="entropium_getRandomBlock">
+<area shape="rect" id="node1" title="generate a fixed size block of random data" alt="" coords="255,5,461,32"/>
+<area shape="rect" id="node2" href="$entropium_8c.html#aa1d70e6b1140fe37cd20d2aab88fdcf8" title="get a single byte of random data" alt="" coords="5,5,207,32"/>
+</map>
